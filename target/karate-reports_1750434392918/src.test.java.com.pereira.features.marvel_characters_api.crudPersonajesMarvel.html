@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"6e582e09-d511-4dad-b9ef-04ae34d6910d",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.com.pereira.features.marvel_characters_api.crudPersonajesMarvel</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-06-20 10:45:04 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:20]"><span>[1:20]</span> <span>T-API-HU-12345A-CA01-Obtener todos los personajes exitosamente 200 - karate</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:27]"><span>[2:27]</span> <span>T-API-HU-12345A-CA02-Obtener personaje por ID exitosamente 200 - karate</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/com/pereira/features/marvel_characters_api/crudPersonajesMarvel.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">HU-12345A CRUD de personajes Marvel (microservicio para gestión de personajes)</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">marvel_characters_api</a><a class="badge badge-primary" href="karate-tags.html">iniciativa_marvel</a><a class="badge badge-primary" href="karate-tags.html">id:1</a><a class="badge badge-primary" href="karate-tags.html">obtenerPersonajes</a><a class="badge badge-primary" href="karate-tags.html">REQ_HU-12345A</a><a class="badge badge-primary" href="karate-tags.html">HU12345A</a><a class="badge badge-primary" href="karate-tags.html">marvel_character_crud</a><a class="badge badge-primary" href="karate-tags.html">Agente2</a><a class="badge badge-primary" href="karate-tags.html">E2</a><a class="badge badge-primary" href="karate-tags.html">solicitudExitosa200</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:20]</span>
+                <span class="scenario-name">T-API-HU-12345A-CA01-Obtener todos los personajes exitosamente 200 - karate</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1229</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">370</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://bp-se-test-cabcd9b246a5.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/testuser/api/characters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarHeaders =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">function() {
+  return {
+    &quot;Content-Type&quot;: &quot;application/json&quot;
+  };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def headers = generarHeaders()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">52</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">771</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">10:45:03.742 request:
+1 &gt; GET http://bp-se-test-cabcd9b246a5.herokuapp.com/testuser/api/characters
+1 &gt; Content-Type: application/json
+1 &gt; Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:45:04.318 response time in milliseconds: 565
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750434304&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=09%2BXiJfuIjHJ5xxOmLNHyNzWs6YCfW%2FRGzCSpKChW38%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750434304&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=09%2BXiJfuIjHJ5xxOmLNHyNzWs6YCfW%2FRGzCSpKChW38%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 20 Jun 2025 15:45:04 GMT
+1 &lt; Via: 1.1 vegur
+[{&quot;id&quot;:16,&quot;name&quot;:&quot;Batman&quot;,&quot;alterego&quot;:&quot;Bruce Wayne&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Strong&quot;,&quot;Force&quot;]},{&quot;id&quot;:27,&quot;name&quot;:&quot;Valid Character-1750394549392&quot;,&quot;alterego&quot;:&quot;Valid Alter&quot;,&quot;description&quot;:&quot;Valid description&quot;,&quot;powers&quot;:[&quot;Power1&quot;,&quot;Power2&quot;]},{&quot;id&quot;:28,&quot;name&quot;:&quot;Test Special-1750394550905&quot;,&quot;alterego&quot;:&quot;Special Alter&quot;,&quot;description&quot;:&quot;Description with symbols&quot;,&quot;powers&quot;:[&quot;Power1&quot;,&quot;Power2&quot;]},{&quot;id&quot;:29,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:30,&quot;name&quot;:&quot;Valid Character-1750394648357&quot;,&quot;alterego&quot;:&quot;Valid Alter&quot;,&quot;description&quot;:&quot;Valid description&quot;,&quot;powers&quot;:[&quot;Power1&quot;,&quot;Power2&quot;]},{&quot;id&quot;:31,&quot;name&quot;:&quot;Test Special-1750394649920&quot;,&quot;alterego&quot;:&quot;Special Alter&quot;,&quot;description&quot;:&quot;Description with symbols&quot;,&quot;powers&quot;:[&quot;Power1&quot;,&quot;Power2&quot;]},{&quot;id&quot;:32,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark M&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:33,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:34,&quot;name&quot;:&quot;Valid Character-1750394792389&quot;,&quot;alterego&quot;:&quot;Valid Alter&quot;,&quot;description&quot;:&quot;Valid description&quot;,&quot;powers&quot;:[&quot;Power1&quot;,&quot;Power2&quot;]},{&quot;id&quot;:35,&quot;name&quot;:&quot;Test Special-1750394793916&quot;,&quot;alterego&quot;:&quot;Special Alter&quot;,&quot;description&quot;:&quot;Description with symbols&quot;,&quot;powers&quot;:[&quot;Power1&quot;,&quot;Power2&quot;]},{&quot;id&quot;:36,&quot;name&quot;:&quot;Valid Character-1750394826921&quot;,&quot;alterego&quot;:&quot;Valid Alter&quot;,&quot;description&quot;:&quot;Valid description&quot;,&quot;powers&quot;:[&quot;Power1&quot;,&quot;Power2&quot;]},{&quot;id&quot;:37,&quot;name&quot;:&quot;Test Special-1750394828328&quot;,&quot;alterego&quot;:&quot;Special Alter&quot;,&quot;description&quot;:&quot;Description with symbols&quot;,&quot;powers&quot;:[&quot;Power1&quot;,&quot;Power2&quot;]},{&quot;id&quot;:39,&quot;name&quot;:&quot;Test Special-1750394871627&quot;,&quot;alterego&quot;:&quot;Special Alter&quot;,&quot;description&quot;:&quot;Description with symbols&quot;,&quot;powers&quot;:[&quot;Power1&quot;,&quot;Power2&quot;]},{&quot;id&quot;:41,&quot;name&quot;:&quot;Spider Man&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;student&quot;,&quot;powers&quot;:[&quot;Flight&quot;]},{&quot;id&quot;:42,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:44,&quot;name&quot;:&quot;Iron Man2&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:45,&quot;name&quot;:&quot;Test&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:46,&quot;name&quot;:&quot;Iron Man23&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:47,&quot;name&quot;:&quot;SY&quot;,&quot;alterego&quot;:&quot;SYS&quot;,&quot;description&quot;:&quot;Genio, millonario, playboy, filántropo&quot;,&quot;powers&quot;:[&quot;Armadura&quot;,&quot;Inteligencia&quot;]},{&quot;id&quot;:48,&quot;name&quot;:&quot;Iron Man1&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:49,&quot;name&quot;:&quot;Iron Man3&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:50,&quot;name&quot;:&quot;Eve&quot;,&quot;alterego&quot;:&quot;otro&quot;,&quot;description&quot;:&quot;otro&quot;,&quot;powers&quot;:[&quot;jdjdjd&quot;]},{&quot;id&quot;:53,&quot;name&quot;:&quot;Red Ranger&quot;,&quot;alterego&quot;:&quot;Jason&quot;,&quot;description&quot;:&quot;Red Power Ranger&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Fight&quot;]},{&quot;id&quot;:54,&quot;name&quot;:&quot;Andres&quot;,&quot;alterego&quot;:&quot;RogerFeederer&quot;,&quot;description&quot;:&quot;Feeder supremos&quot;,&quot;powers&quot;:[&quot;Support&quot;,&quot;Hc&quot;]},{&quot;id&quot;:55,&quot;name&quot;:&quot;Doraemon&quot;,&quot;alterego&quot;:&quot;Doraemon&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:56,&quot;name&quot;:&quot;Spider-Man&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido de Marvel&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:58,&quot;name&quot;:&quot;Gerson Veramendi&quot;,&quot;alterego&quot;:&quot;Senior FullStack Developer&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Java&quot;,&quot;Python&quot;,&quot;JavaScript&quot;,&quot;TypeScript&quot;,&quot;PHP&quot;,&quot;.NET&quot;]},{&quot;id&quot;:59,&quot;name&quot;:&quot;KarateTestUser&quot;,&quot;alterego&quot;:&quot;Karate Alter&quot;,&quot;description&quot;:&quot;Personaje creado para pruebas automáticas&quot;,&quot;powers&quot;:[&quot;TestPower1&quot;,&quot;TestPower2&quot;]},{&quot;id&quot;:61,&quot;name&quot;:&quot;BatMans 2026&quot;,&quot;alterego&quot;:&quot;Bruce Wayne&quot;,&quot;description&quot;:&quot;the Dark Knight in Gotham City&quot;,&quot;powers&quot;:[&quot;Money&quot;,&quot;Investment&quot;,&quot;Martial Arts&quot;,&quot;Detective Skills&quot;,&quot;Gadgets&quot;]},{&quot;id&quot;:63,&quot;name&quot;:&quot;Eduardo Vizuete&quot;,&quot;alterego&quot;:&quot;eduviz&quot;,&quot;description&quot;:&quot;eduardo dev&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:65,&quot;name&quot;:&quot;Iron Maiden&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:66,&quot;name&quot;:&quot;Iron Man 1750431405867&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:67,&quot;name&quot;:&quot;Iron Man Test3 1750431406349&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:68,&quot;name&quot;:&quot;Iron Man Test5 1750431407189&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:69,&quot;name&quot;:&quot;Iron Man Test7 1750431410793&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:71,&quot;name&quot;:&quot;Spider-Man Test11 1750431412674&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:72,&quot;name&quot;:&quot;Captain America Test11 1750431412674&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Súper soldado&quot;,&quot;powers&quot;:[&quot;Fuerza&quot;,&quot;Escudo&quot;,&quot;Liderazgo&quot;]},{&quot;id&quot;:73,&quot;name&quot;:&quot;kcatucuamba&quot;,&quot;alterego&quot;:&quot;kcatucuamba&quot;,&quot;description&quot;:&quot;A genius programmer and a superhero&quot;,&quot;powers&quot;:[&quot;PHP&quot;,&quot;JAVA&quot;]},{&quot;id&quot;:74,&quot;name&quot;:&quot;Iron Man 1750431456185&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:75,&quot;name&quot;:&quot;Iron Man Test3 1750431456502&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:76,&quot;name&quot;:&quot;Iron Man Test5 1750431457318&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:77,&quot;name&quot;:&quot;Iron Man Test7 1750431458110&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:79,&quot;name&quot;:&quot;Spider-Man Test11 1750431459939&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:80,&quot;name&quot;:&quot;Captain America Test11 1750431459939&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Súper soldado&quot;,&quot;powers&quot;:[&quot;Fuerza&quot;,&quot;Escudo&quot;,&quot;Liderazgo&quot;]},{&quot;id&quot;:81,&quot;name&quot;:&quot;Iron ManX&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:83,&quot;name&quot;:&quot;Chapulin-Colorado&quot;,&quot;alterego&quot;:&quot;Chespirito&quot;,&quot;description&quot;:&quot;mas fuerte que un raton&quot;,&quot;powers&quot;:[&quot;Valentía&quot;,&quot;Humor&quot;]},{&quot;id&quot;:84,&quot;name&quot;:&quot;Iron Man 22a4ce49-91b0-462d-828a-40b438ac05d7&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:87,&quot;name&quot;:&quot;JSI&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:88,&quot;name&quot;:&quot;Jose Antonio Alvear&quot;,&quot;alterego&quot;:&quot;Jose Man&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Java&quot;,&quot;Flight&quot;]},{&quot;id&quot;:90,&quot;name&quot;:&quot;Iron Man 2&quot;,&quot;alterego&quot;:&quot;Tony Dark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:91,&quot;name&quot;:&quot;Iron Man 0192799a-9023-415b-828c-92b298e570da&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:92,&quot;name&quot;:&quot;Iron Man 3&quot;,&quot;alterego&quot;:&quot;Tony Dark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:94,&quot;name&quot;:&quot;Test Character 1750431844211&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:95,&quot;name&quot;:&quot;Test Character 1750431844448&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:96,&quot;name&quot;:&quot;Test Character 1750431845069&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:97,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:99,&quot;name&quot;:&quot;Test Character 1750431846880&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:100,&quot;name&quot;:&quot;Iron Man bad495f1-1104-4cdc-a9b0-f1f8178a484f&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:101,&quot;name&quot;:&quot;Test Character 1750431889143&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:102,&quot;name&quot;:&quot;Test Character 1750431889375&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:103,&quot;name&quot;:&quot;Test Character 1750431889993&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:104,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:106,&quot;name&quot;:&quot;Test Character 1750431891804&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:108,&quot;name&quot;:&quot;Spider-Man Eva&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido de Marvel&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:109,&quot;name&quot;:&quot;Iron Manssss2&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:110,&quot;name&quot;:&quot;Test Character 1750431950573&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:111,&quot;name&quot;:&quot;Test Character 1750431951720&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:112,&quot;name&quot;:&quot;Iron Man 6de7d881-4a3d-475f-a0a8-c2aa1dfb5068&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:113,&quot;name&quot;:&quot;Iron Man 9999&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:115,&quot;name&quot;:&quot;Iron Man 9c78d15f-ddd0-4e95-9c3c-04cf0fe23c68&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:116,&quot;name&quot;:&quot;Hulk 1527d26f-efd6-4ba4-9ffd-41f11a3be088&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:117,&quot;name&quot;:&quot;Diego Zurita&quot;,&quot;alterego&quot;:&quot;Diego&quot;,&quot;description&quot;:&quot;Poderoso&quot;,&quot;powers&quot;:[&quot;Fuerte&quot;]},{&quot;id&quot;:118,&quot;name&quot;:&quot;Test Character 1750432019426&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:119,&quot;name&quot;:&quot;Test Character 1750432019668&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:120,&quot;name&quot;:&quot;Nuevo Personaje&quot;,&quot;alterego&quot;:&quot;Alter Ego&quot;,&quot;description&quot;:&quot;Descripción del nuevo personaje&quot;,&quot;powers&quot;:[&quot;Poder1&quot;,&quot;Poder2&quot;]},{&quot;id&quot;:121,&quot;name&quot;:&quot;Iron Manf&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:122,&quot;name&quot;:&quot;Test Character 1750432020309&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:123,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:125,&quot;name&quot;:&quot;Test Character 1750432022197&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:126,&quot;name&quot;:&quot;Iron Man 53ca6cc1-a1bd-4f2b-93f9-1633be1aad6b&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:127,&quot;name&quot;:&quot;Hulk 38179ff8-3a8b-4688-8f37-3e731ac47905&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:128,&quot;name&quot;:&quot;Iron Man 449254f2-2df9-477d-acc7-69fc740caffd&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:129,&quot;name&quot;:&quot;Hulk 46ce508f-89e3-4b05-bc80-25c9a16123a4&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:130,&quot;name&quot;:&quot;Thor 2e08893c-7920-498d-90f9-3343b0a54908&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder&quot;,&quot;powers&quot;:[&quot;Hammer&quot;,&quot;Lightning&quot;]},{&quot;id&quot;:131,&quot;name&quot;:&quot;Iron Man ac45fd26-8b98-487d-81c9-f2e9d934384e&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:133,&quot;name&quot;:&quot;Iron Man 62befe53-57ac-43c3-83fe-223f98538cac&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:134,&quot;name&quot;:&quot;Hulk 5fdd898c-a51d-4752-90f2-bab33039ffb8&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:135,&quot;name&quot;:&quot;Thor f301c972-781b-4031-bad6-820b1c0b87b5&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder&quot;,&quot;powers&quot;:[&quot;Hammer&quot;,&quot;Lightning&quot;]},{&quot;id&quot;:136,&quot;name&quot;:&quot;Iron Man 200&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:137,&quot;name&quot;:&quot;Iron Man Eva&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:138,&quot;name&quot;:&quot;Test Character 1750432250612&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:139,&quot;name&quot;:&quot;Test Character 1750432250854&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:140,&quot;name&quot;:&quot;Test Character 1750432251501&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:141,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:143,&quot;name&quot;:&quot;Test Character 1750432253388&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:144,&quot;name&quot;:&quot;Iron Man 86dcbb11-1522-4457-afd9-398d1c189b8a&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:146,&quot;name&quot;:&quot;Hulk eea541c7-2292-4cef-af8c-d19a81e39cb9&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:147,&quot;name&quot;:&quot;Thor 6fa4faf3-c0bb-475d-b0c9-1570131ddcc6&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder&quot;,&quot;powers&quot;:[&quot;Hammer&quot;,&quot;Lightning&quot;]},{&quot;id&quot;:148,&quot;name&quot;:&quot;Capitan America de7de8bc-4a24-4313-9cfe-200dfa6d2775&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Shield&quot;,&quot;Leadership&quot;]},{&quot;id&quot;:149,&quot;name&quot;:&quot;IronMan-92ac203d-0658-432a-8ebc-e6466d1eb66f&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:150,&quot;name&quot;:&quot;Spider-Man Evaluacion NN&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido de Marvel&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:151,&quot;name&quot;:&quot;Spider-Man-5&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido de Marvel&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:152,&quot;name&quot;:&quot;Iron Man e354d0ac-a1c2-46aa-be2e-f1d6d8f9b459&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:153,&quot;name&quot;:&quot;Hulk e459e8d2-7af9-4bf7-b9d5-22a9f453fffb&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:154,&quot;name&quot;:&quot;Thor 2e94238c-4bea-45ec-b042-00ed2e7e8fb3&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder&quot;,&quot;powers&quot;:[&quot;Hammer&quot;,&quot;Lightning&quot;]},{&quot;id&quot;:155,&quot;name&quot;:&quot;Capitan America 9da54d03-62b6-49ac-9b9e-164d80e3c02d&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Shield&quot;,&quot;Leadership&quot;]},{&quot;id&quot;:157,&quot;name&quot;:&quot;Iron Man 8ed5f931-879e-4bb4-a782-c34ff31d093b&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:158,&quot;name&quot;:&quot;Hulk 291f5440-5a17-48a4-bdec-192aa5ad91a7&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:159,&quot;name&quot;:&quot;Thor 3610678a-d9c8-4848-b133-4c7ebb9b1f6d&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder&quot;,&quot;powers&quot;:[&quot;Hammer&quot;,&quot;Lightning&quot;]},{&quot;id&quot;:160,&quot;name&quot;:&quot;Capitan America 5c6fb5f4-1f84-4149-87d5-f09499cebe3b&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Shield&quot;,&quot;Leadership&quot;]},{&quot;id&quot;:162,&quot;name&quot;:&quot;Spider-Man-6&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido de Marvel&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:163,&quot;name&quot;:&quot;Captain Marvel&quot;,&quot;alterego&quot;:&quot;Carol Danvers&quot;,&quot;description&quot;:&quot;the biggest hero in the world&quot;,&quot;powers&quot;:[&quot;Flight&quot;,&quot;Force&quot;]},{&quot;id&quot;:164,&quot;name&quot;:&quot;Iron Man dde04cc2-ac24-4eb4-ac77-ab5592d642fc&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:165,&quot;name&quot;:&quot;Hulk c06d00b0-f944-432e-8cbe-646bb23e5422&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:166,&quot;name&quot;:&quot;Thor e04e9665-ee54-4b9c-baa4-44a41efd1133&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder&quot;,&quot;powers&quot;:[&quot;Hammer&quot;,&quot;Lightning&quot;]},{&quot;id&quot;:167,&quot;name&quot;:&quot;Capitan America 65bfa9f4-efcd-4f20-8f98-a824c7d8eac4&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Shield&quot;,&quot;Leadership&quot;]},{&quot;id&quot;:169,&quot;name&quot;:&quot;Test Character 1750432373791&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:170,&quot;name&quot;:&quot;Test Character 1750432374022&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:171,&quot;name&quot;:&quot;Test Character 1750432374630&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:172,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:174,&quot;name&quot;:&quot;Test Character 1750432376433&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:175,&quot;name&quot;:&quot;Iron Man #3&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:176,&quot;name&quot;:&quot;Iron Man 5580fbb0-f402-4c30-8f00-9c9543cb5a6b&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:177,&quot;name&quot;:&quot;Jose Obando&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:178,&quot;name&quot;:&quot;Test Character 1750432464491&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:179,&quot;name&quot;:&quot;Test Character 1750432465100&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:180,&quot;name&quot;:&quot;Test Character 1750432465317&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:181,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:184,&quot;name&quot;:&quot;Test Character 1750432467117&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:185,&quot;name&quot;:&quot;Hulk&quot;,&quot;alterego&quot;:&quot;No  Recuerdo&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:186,&quot;name&quot;:&quot;Loki&quot;,&quot;alterego&quot;:&quot;Loki Laufeyson&quot;,&quot;description&quot;:&quot;Dios del engaño&quot;,&quot;powers&quot;:[&quot;Magia&quot;,&quot;Ilusión&quot;]},{&quot;id&quot;:187,&quot;name&quot;:&quot;Ghost Rider JC&quot;,&quot;alterego&quot;:&quot;Ghost Rider JC&quot;,&quot;description&quot;:&quot;Demon&quot;,&quot;powers&quot;:[&quot;Fire&quot;,&quot;Punishing gaze&quot;]},{&quot;id&quot;:188,&quot;name&quot;:&quot;IronMan-4e1c6d16-e5ee-42d8-8337-49de7e644f2c&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:189,&quot;name&quot;:&quot;Deadpool jusimban3&quot;,&quot;alterego&quot;:&quot;Wade Winston Wilson&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Immortality&quot;,&quot;Regeneration&quot;,&quot;Superhuman strength&quot;]},{&quot;id&quot;:191,&quot;name&quot;:&quot;CasaPlus&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:192,&quot;name&quot;:&quot;Iron Man 2beed694-dc05-4dae-a2ca-5607f27bf28e&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:193,&quot;name&quot;:&quot;BatMans 2025&quot;,&quot;alterego&quot;:&quot;Bruce Wayne&quot;,&quot;description&quot;:&quot;the Dark Knight&quot;,&quot;powers&quot;:[&quot;Money&quot;,&quot;Investment&quot;,&quot;Martial Arts&quot;]},{&quot;id&quot;:194,&quot;name&quot;:&quot;Jose Obando 1750432629445&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:195,&quot;name&quot;:&quot;Test Character 1750432656836&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:196,&quot;name&quot;:&quot;Test Character 1750432657078&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:197,&quot;name&quot;:&quot;Test Character 1750432657714&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:198,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:200,&quot;name&quot;:&quot;Jose Obando 1750432659387&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:201,&quot;name&quot;:&quot;Test Character 1750432659614&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:202,&quot;name&quot;:&quot;Iron Man e0a94dac-e873-4970-bd09-b4203cd66860&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:203,&quot;name&quot;:&quot;Chema Venegas&quot;,&quot;alterego&quot;:&quot;José Maria Venegas&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:204,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:208,&quot;name&quot;:&quot;Iron Man 8aef9187-dfcf-4c54-92fe-e1833b0159e6&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:209,&quot;name&quot;:&quot;Iron Man BP&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:210,&quot;name&quot;:&quot;Jose Obando 1750432762927&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:211,&quot;name&quot;:&quot;Gilgamesh FSN Unlimited Blades&quot;,&quot;alterego&quot;:&quot;Emiya Shirou&quot;,&quot;description&quot;:&quot;King of Babylon, and friend of Enkidou&quot;,&quot;powers&quot;:[&quot;Full Attack&quot;,&quot;Unlimited Blades&quot;,&quot;Final Hit&quot;]},{&quot;id&quot;:212,&quot;name&quot;:&quot;Iron Maiden 2&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:213,&quot;name&quot;:&quot;Diego Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:214,&quot;name&quot;:&quot;Iron Man 33145b49-a097-4c72-981e-4c57d9a5e88c&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:215,&quot;name&quot;:&quot;Hulk ebbc0b5f-1969-403e-a742-67d590a463ae&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:216,&quot;name&quot;:&quot;Thor bc05acef-514d-4521-9c92-fc5bde2bbdd8&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder&quot;,&quot;powers&quot;:[&quot;Hammer&quot;,&quot;Lightning&quot;]},{&quot;id&quot;:217,&quot;name&quot;:&quot;Capitan America 51f41353-8527-48a5-9048-1741d044680f&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Shield&quot;,&quot;Leadership&quot;]},{&quot;id&quot;:219,&quot;name&quot;:&quot;Jose Obando 1750432788774&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:220,&quot;name&quot;:&quot;Capitan America&quot;,&quot;alterego&quot;:&quot;Cris&quot;,&quot;description&quot;:&quot;Muy muy fuertote&quot;,&quot;powers&quot;:[&quot;Escudo&quot;]},{&quot;id&quot;:221,&quot;name&quot;:&quot;Prueba name&quot;,&quot;alterego&quot;:&quot;Alt prueba&quot;,&quot;description&quot;:&quot;Prueba des&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:222,&quot;name&quot;:&quot;Spider-Man-7&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido de Marvel&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:225,&quot;name&quot;:&quot;Iron Man 1da9babc-0f1b-4ad5-a4e7-06c3c258c68a&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:226,&quot;name&quot;:&quot;Jose Obando 1750432896081&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:227,&quot;name&quot;:&quot;Prueba name1&quot;,&quot;alterego&quot;:&quot;Alt prueba&quot;,&quot;description&quot;:&quot;Prueba des&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:228,&quot;name&quot;:&quot;Iron Man6&quot;,&quot;alterego&quot;:&quot;Tony Stark6&quot;,&quot;description&quot;:&quot;Genius billionaire6&quot;,&quot;powers&quot;:[&quot;Armor6&quot;,&quot;Flight6&quot;]},{&quot;id&quot;:230,&quot;name&quot;:&quot;Iron Woman&quot;,&quot;alterego&quot;:&quot;Tony Starker&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:231,&quot;name&quot;:&quot;Iron Man 3244c4dc-b252-4dad-8ca9-5832a0b47887&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:232,&quot;name&quot;:&quot;Hulk 965fef05-74b4-4eb7-b0db-05133f03b247&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:233,&quot;name&quot;:&quot;Thor 3ddb8a85-f427-4b58-ba84-8de2b7e501e4&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder&quot;,&quot;powers&quot;:[&quot;Hammer&quot;,&quot;Lightning&quot;]},{&quot;id&quot;:234,&quot;name&quot;:&quot;Capitan America b95c1248-8deb-48ea-a31a-058efb0c257e&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Shield&quot;,&quot;Leadership&quot;]},{&quot;id&quot;:235,&quot;name&quot;:&quot;Jose Obando 1750432985709&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:237,&quot;name&quot;:&quot;Pedro Costa&quot;,&quot;alterego&quot;:&quot;Pedrito Coco&quot;,&quot;description&quot;:&quot;Un costeño buena onda que le gusta la playa&quot;,&quot;powers&quot;:[&quot;Reir&quot;,&quot;Cantar&quot;,&quot;Bailar&quot;]},{&quot;id&quot;:238,&quot;name&quot;:&quot;Silvana Bentacourt&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:239,&quot;name&quot;:&quot;Iron Man100&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:240,&quot;name&quot;:&quot;Iron Man JZ&quot;,&quot;alterego&quot;:&quot;Tony Stark JZ&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:241,&quot;name&quot;:&quot;Wolverine&quot;,&quot;alterego&quot;:&quot;James Howlett&quot;,&quot;description&quot;:&quot;Mutante con garras de adamantium y factor de curación&quot;,&quot;powers&quot;:[&quot;Regeneración&quot;,&quot;Garras de adamantium&quot;,&quot;Sentidos agudos&quot;,&quot;Longevidad&quot;]},{&quot;id&quot;:242,&quot;name&quot;:&quot;Iron Man JZZ&quot;,&quot;alterego&quot;:&quot;Otro JZ&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:243,&quot;name&quot;:&quot;Iron Man1900&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:244,&quot;name&quot;:&quot;hugo leon&quot;,&quot;alterego&quot;:&quot;Leons&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:246,&quot;name&quot;:&quot;Iron Man0&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:247,&quot;name&quot;:&quot;Iron Alexis&quot;,&quot;alterego&quot;:&quot;Tony Alexis&quot;,&quot;description&quot;:&quot;Genius billionaire soccer&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:248,&quot;name&quot;:&quot;Jose Obando 1750433080040&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:249,&quot;name&quot;:&quot;Iron Man abf120f1-71fc-4a6e-8458-603dd31e22c0&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:250,&quot;name&quot;:&quot;Jose Obando 1750433097032&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:251,&quot;name&quot;:&quot;Iron Men&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:252,&quot;name&quot;:&quot;Silvana Bentacourt v1&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:253,&quot;name&quot;:&quot;Test Character 1750433107277&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:254,&quot;name&quot;:&quot;Test Character 1750433107521&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:255,&quot;name&quot;:&quot;Test Character 1750433108172&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:256,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:258,&quot;name&quot;:&quot;Test Character 1750433110415&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:259,&quot;name&quot;:&quot;Anderson Morrillo &quot;,&quot;alterego&quot;:&quot;Worst Automatizator ever&quot;,&quot;description&quot;:&quot;El Dev Humilde&quot;,&quot;powers&quot;:[&quot;JAVA&quot;,&quot;NET&quot;]},{&quot;id&quot;:260,&quot;name&quot;:&quot;uniqueName&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:261,&quot;name&quot;:&quot;Iron Man Infernal 1&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:262,&quot;name&quot;:&quot;Iron Man1901&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:263,&quot;name&quot;:&quot;Accelerator&quot;,&quot;alterego&quot;:&quot;Emiya Shirou &quot;,&quot;description&quot;:&quot;King of Babylon, and friend of Enkidou&quot;,&quot;powers&quot;:[&quot;Full Attack&quot;,&quot;Unlimited Blades&quot;,&quot;Final Hit&quot;]},{&quot;id&quot;:265,&quot;name&quot;:&quot;IronMan-&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:266,&quot;name&quot;:&quot;Iron Man 20fe3893-3e5e-450b-a582-29e860e97061&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:267,&quot;name&quot;:&quot;Hulk d9c79414-8bed-4759-8490-d1626dd0baaa&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Green giant&quot;,&quot;powers&quot;:[&quot;Strength&quot;]},{&quot;id&quot;:268,&quot;name&quot;:&quot;Thor 98acbad0-52a4-41bf-9cfe-ff4e57f25317&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder&quot;,&quot;powers&quot;:[&quot;Hammer&quot;,&quot;Lightning&quot;]},{&quot;id&quot;:269,&quot;name&quot;:&quot;Capitan America 159d7856-e8fc-409e-b072-e76f81547bc6&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Shield&quot;,&quot;Leadership&quot;]},{&quot;id&quot;:271,&quot;name&quot;:&quot;Iron Mans&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:272,&quot;name&quot;:&quot;Spider-Man Test BP NN&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido de Marvel&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:273,&quot;name&quot;:&quot;TestBP&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:275,&quot;name&quot;:&quot;IronFB-&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:277,&quot;name&quot;:&quot;Test Character 1750433288330&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:278,&quot;name&quot;:&quot;Test Character 1750433288565&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:279,&quot;name&quot;:&quot;Test Character 1750433289216&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:280,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:282,&quot;name&quot;:&quot;Test Character 1750433291431&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:283,&quot;name&quot;:&quot;Iron Man 43e885e6-1428-4f2e-a2c9-4d3760dfa719&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:284,&quot;name&quot;:&quot;Iron Mon&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:285,&quot;name&quot;:&quot;Iron 6&quot;,&quot;alterego&quot;:&quot;Tony 6&quot;,&quot;description&quot;:&quot;Genius billionaire6&quot;,&quot;powers&quot;:[&quot;Alto6&quot;]},{&quot;id&quot;:287,&quot;name&quot;:&quot;Thryion Lannister&quot;,&quot;alterego&quot;:&quot;Emiya Shirou &quot;,&quot;description&quot;:&quot;King of Babylon, and friend of Enkidou&quot;,&quot;powers&quot;:[&quot;Full Attack&quot;,&quot;Unlimited Blades&quot;,&quot;Final Hit&quot;]},{&quot;id&quot;:288,&quot;name&quot;:&quot;Iron Man c2cb5987-8855-46f0-b661-9006e15192c6&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:289,&quot;name&quot;:&quot;Chris M&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:290,&quot;name&quot;:&quot;Iron Man23232&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:291,&quot;name&quot;:&quot;Super Hero Test 4746&quot;,&quot;alterego&quot;:&quot;Cristian Ruiz&quot;,&quot;description&quot;:&quot;Genius programmer and coffee lover&quot;,&quot;powers&quot;:[&quot;Develop Software&quot;,&quot;Make Coffee&quot;,&quot;Solve Problems&quot;]},{&quot;id&quot;:292,&quot;name&quot;:&quot;Iron Max&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:295,&quot;name&quot;:&quot;Test Character 1750433506400&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:296,&quot;name&quot;:&quot;Test Character 1750433506630&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:297,&quot;name&quot;:&quot;Test Character 1750433507077&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:298,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:299,&quot;name&quot;:&quot;Iron Man 22&quot;,&quot;alterego&quot;:&quot;Tony Stark 22&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:300,&quot;name&quot;:&quot;El pepe&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:302,&quot;name&quot;:&quot;Test Character 1750433509103&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:303,&quot;name&quot;:&quot;Iron Man1902&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:304,&quot;name&quot;:&quot;Super Hero Test &quot;,&quot;alterego&quot;:&quot;Cristian Ruiz&quot;,&quot;description&quot;:&quot;Genius programmer and coffee lover&quot;,&quot;powers&quot;:[&quot;Develop Software&quot;,&quot;Make Coffee&quot;,&quot;Solve Problems&quot;]},{&quot;id&quot;:305,&quot;name&quot;:&quot;IronFB-69d7a1a7-49f9-4cf8-8f24-04ede770aa36&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:308,&quot;name&quot;:&quot;Jose Obando 1750433570443&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:309,&quot;name&quot;:&quot;Jose Obando&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:310,&quot;name&quot;:&quot;Iron Man1903&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:311,&quot;name&quot;:&quot;Black Widow&quot;,&quot;alterego&quot;:&quot;Natasha Romanoff&quot;,&quot;description&quot;:&quot;Espía rusa&quot;,&quot;powers&quot;:[&quot;Combate&quot;,&quot;Espionaje&quot;]},{&quot;id&quot;:312,&quot;name&quot;:&quot;Thor&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;Dios del trueno&quot;,&quot;powers&quot;:[&quot;Control del rayo&quot;,&quot;Super fuerza&quot;,&quot;Mjolnir&quot;]},{&quot;id&quot;:313,&quot;name&quot;:&quot;Captain America&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Super soldado&quot;,&quot;powers&quot;:[&quot;Super fuerza&quot;,&quot;Escudo de Vibranium&quot;]},{&quot;id&quot;:314,&quot;name&quot;:&quot;Spider-Man 113189&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Superhéroe arácnido de Marvel&quot;,&quot;powers&quot;:[&quot;Agilidad&quot;,&quot;Sentido arácnido&quot;,&quot;Trepar muros&quot;]},{&quot;id&quot;:315,&quot;name&quot;:&quot;CohetePlus&quot;,&quot;alterego&quot;:&quot;Cohete Plus&quot;,&quot;description&quot;:&quot;Cohetito Plus&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:318,&quot;name&quot;:&quot;Super Hero Test 123&quot;,&quot;alterego&quot;:&quot;Cristian Ruiz&quot;,&quot;description&quot;:&quot;Genius programmer and coffee lover&quot;,&quot;powers&quot;:[&quot;Develop Software&quot;,&quot;Make Coffee&quot;,&quot;Solve Problems&quot;]},{&quot;id&quot;:319,&quot;name&quot;:&quot;Test Character 1750433582237&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:320,&quot;name&quot;:&quot;Test Character 1750433582455&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:321,&quot;name&quot;:&quot;Test Character 1750433583360&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:322,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:323,&quot;name&quot;:&quot;max versatapen&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:325,&quot;name&quot;:&quot;Test Character 1750433585661&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:326,&quot;name&quot;:&quot;Iron Man 0a790bc9-1ee6-41f5-8a31-706d23a56f87&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:327,&quot;name&quot;:&quot;Prueba name2&quot;,&quot;alterego&quot;:&quot;Alt prueba&quot;,&quot;description&quot;:&quot;Prueba des&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:328,&quot;name&quot;:&quot;Deadpool jusimban&quot;,&quot;alterego&quot;:&quot;Wade Winston Wilson&quot;,&quot;description&quot;:&quot;Mercenario, supervillano​​ y antihéroe&quot;,&quot;powers&quot;:[&quot;Immortality&quot;,&quot;Regeneration&quot;,&quot;Superhuman strength&quot;]},{&quot;id&quot;:329,&quot;name&quot;:&quot;Test Character 1750433618842&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:330,&quot;name&quot;:&quot;Test Character 1750433619055&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:331,&quot;name&quot;:&quot;Test Character 1750433619974&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:332,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:334,&quot;name&quot;:&quot;Test Character 1750433622270&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:335,&quot;name&quot;:&quot;GatunoNeptuno&quot;,&quot;alterego&quot;:&quot;Naranjoso&quot;,&quot;description&quot;:&quot;Crazy cat&quot;,&quot;powers&quot;:[&quot;Meow&quot;,&quot;Cry in desperation&quot;]},{&quot;id&quot;:336,&quot;name&quot;:&quot;Test Character 1750433629991&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:337,&quot;name&quot;:&quot;Test Character 1750433630210&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:338,&quot;name&quot;:&quot;Test Character 1750433630809&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:339,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:341,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:342,&quot;name&quot;:&quot;Iron Man tst&quot;,&quot;alterego&quot;:&quot;Tony Stark tst&quot;,&quot;description&quot;:&quot;Genius billionaire tst&quot;,&quot;powers&quot;:[&quot;Armor tst&quot;,&quot;Flight tst&quot;]},{&quot;id&quot;:343,&quot;name&quot;:&quot;CohetePlus1&quot;,&quot;alterego&quot;:&quot;Cohete Plus&quot;,&quot;description&quot;:&quot;Cohetito Plus&quot;,&quot;powers&quot;:[&quot;Armors&quot;,&quot;Flight&quot;]},{&quot;id&quot;:344,&quot;name&quot;:&quot;Iron Man God&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genio, millonario, playboy, filántropo&quot;,&quot;powers&quot;:[&quot;Armadura&quot;,&quot;Inteligencia&quot;]},{&quot;id&quot;:345,&quot;name&quot;:&quot;Iron Man New&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated character 2&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:347,&quot;name&quot;:&quot;Spider-Man1&quot;,&quot;alterego&quot;:&quot;Peter Parker1&quot;,&quot;description&quot;:&quot;Friendly neighborhood Spider-Man falso&quot;,&quot;powers&quot;:[&quot;Wall-crawling&quot;,&quot;Spider-sense&quot;]},{&quot;id&quot;:348,&quot;name&quot;:&quot;CasaPlus1&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:349,&quot;name&quot;:&quot;Test Character 1750433708796&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:350,&quot;name&quot;:&quot;Test Character 1750433709031&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:351,&quot;name&quot;:&quot;Test Character 1750433709482&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:352,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:354,&quot;name&quot;:&quot;Test Character 1750433710980&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:355,&quot;name&quot;:&quot;Iron Man Infernal Karate -e2462451-d7f9-4eb5-9502-2f202828f715&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:356,&quot;name&quot;:&quot;Test Character 1750433733222&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:357,&quot;name&quot;:&quot;Test Character 1750433733461&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:358,&quot;name&quot;:&quot;Test Character 1750433733906&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:359,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:361,&quot;name&quot;:&quot;Test Character 1750433735384&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:362,&quot;name&quot;:&quot;Jose Obando 1750433737747&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:363,&quot;name&quot;:&quot;Franz Herman&quot;,&quot;alterego&quot;:&quot;Max Verstappen&quot;,&quot;description&quot;:&quot;piloto de F1&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:365,&quot;name&quot;:&quot;Deadpool jusimban2&quot;,&quot;alterego&quot;:&quot;Wade Winston Wilson&quot;,&quot;description&quot;:&quot;Mercenario, supervillano​​ y antihéroe&quot;,&quot;powers&quot;:[&quot;Immortality&quot;,&quot;Regeneration&quot;,&quot;Superhuman strength&quot;]},{&quot;id&quot;:366,&quot;name&quot;:&quot;Iron Man Superior&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genio, millonario, playboy, filántropo&quot;,&quot;powers&quot;:[&quot;Armadura&quot;,&quot;Inteligencia&quot;]},{&quot;id&quot;:367,&quot;name&quot;:&quot;Test Character 1750433753944&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:368,&quot;name&quot;:&quot;Test Character 1750433754176&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:369,&quot;name&quot;:&quot;Test Character 1750433754632&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:370,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:372,&quot;name&quot;:&quot;Test Character 1750433756102&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:373,&quot;name&quot;:&quot;Iron Man d53f8847-99c4-4496-a60d-7fb3e7c9c9a9&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:374,&quot;name&quot;:&quot;Iron Man 4711&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:375,&quot;name&quot;:&quot;Test Character 1750433774349&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:376,&quot;name&quot;:&quot;Iron Manchs&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:377,&quot;name&quot;:&quot;Test Character 1750433774586&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:378,&quot;name&quot;:&quot;Test Character 1750433775033&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:379,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:381,&quot;name&quot;:&quot;Test Character 1750433776511&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:382,&quot;name&quot;:&quot;Iron Man1904&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:383,&quot;name&quot;:&quot;Deadpool jusimban3&quot;,&quot;alterego&quot;:&quot;Wade Winston Wilson&quot;,&quot;description&quot;:&quot;Mercenario, supervillano​​ y antihéroe&quot;,&quot;powers&quot;:[&quot;Immortality&quot;,&quot;Regeneration&quot;,&quot;Superhuman strength&quot;]},{&quot;id&quot;:384,&quot;name&quot;:&quot;CohetePlus2&quot;,&quot;alterego&quot;:&quot;Cohete Plus&quot;,&quot;description&quot;:&quot;Cohetito Plus&quot;,&quot;powers&quot;:[&quot;Armors&quot;,&quot;Flight&quot;]},{&quot;id&quot;:385,&quot;name&quot;:&quot;Jose Obando 1750433795597&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:386,&quot;name&quot;:&quot;Iron Man 2e68e284-dd9d-4435-80b2-6481d8e5bac8&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:387,&quot;name&quot;:&quot;Iron Man Infernal Karate -5ba06ebc-c345-4fce-98d3-59ef4568efce&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:388,&quot;name&quot;:&quot;Test Character 1750433797315&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:389,&quot;name&quot;:&quot;Test Character 1750433797554&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:390,&quot;name&quot;:&quot;Test Character 1750433798007&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:391,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:393,&quot;name&quot;:&quot;Test Character 1750433799483&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:394,&quot;name&quot;:&quot;Iron Man tst2&quot;,&quot;alterego&quot;:&quot;Tony Stark tst&quot;,&quot;description&quot;:&quot;Genius billionaire tst&quot;,&quot;powers&quot;:[&quot;Armor tst&quot;,&quot;Flight tst&quot;]},{&quot;id&quot;:395,&quot;name&quot;:&quot;Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:396,&quot;name&quot;:&quot;Iron Man TestBP&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:398,&quot;name&quot;:&quot;Diego2 Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark Diego&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:399,&quot;name&quot;:&quot;Iron Man test - aa&quot;,&quot;alterego&quot;:&quot;Tony Stark aa&quot;,&quot;description&quot;:&quot;Genius billionaire - aa&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;,&quot;unity&quot;]},{&quot;id&quot;:401,&quot;name&quot;:&quot;Test Character 1750433836144&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:402,&quot;name&quot;:&quot;Test Character 1750433836374&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:403,&quot;name&quot;:&quot;Test Character 1750433836808&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:404,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:406,&quot;name&quot;:&quot;Test Character 1750433838281&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:407,&quot;name&quot;:&quot;Test Character 1750433845402&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:408,&quot;name&quot;:&quot;Test Character 1750433845637&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:409,&quot;name&quot;:&quot;Test Character 1750433846080&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:410,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:411,&quot;name&quot;:&quot;Spider-Man1-cb88af9d-9e1d-4965-9a89-77df954d9e16&quot;,&quot;alterego&quot;:&quot;Peter Parker1&quot;,&quot;description&quot;:&quot;Friendly neighborhood Spider-Man falso&quot;,&quot;powers&quot;:[&quot;Wall-crawling&quot;,&quot;Spider-sense&quot;]},{&quot;id&quot;:413,&quot;name&quot;:&quot;Test Character 1750433847614&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:414,&quot;name&quot;:&quot;CohetePlus3&quot;,&quot;alterego&quot;:&quot;Cohete Plus&quot;,&quot;description&quot;:&quot;Cohetito Plus&quot;,&quot;powers&quot;:[&quot;Armors&quot;,&quot;Flight&quot;]},{&quot;id&quot;:415,&quot;name&quot;:&quot;Spiderman Test Karate&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Héroe arácnido de Marvel&quot;,&quot;powers&quot;:[&quot;agilidad&quot;,&quot;sentido arácnido&quot;,&quot;trepar paredes&quot;]},{&quot;id&quot;:416,&quot;name&quot;:&quot;Test Character 1750433855427&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:417,&quot;name&quot;:&quot;Iron Manchss&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:418,&quot;name&quot;:&quot;Test Character 1750433855662&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:419,&quot;name&quot;:&quot;Test Character 1750433856281&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:420,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:422,&quot;name&quot;:&quot;Test Character 1750433858961&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:423,&quot;name&quot;:&quot;ACC&quot;,&quot;alterego&quot;:&quot;AGCC&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:424,&quot;name&quot;:&quot;Iron Man Infernal Karate -1e7b39d2-3f63-4df9-8c8b-a8122365e368&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:425,&quot;name&quot;:&quot;Iron Man 498db3a1-beab-43c9-993c-306b2f6eac11&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:426,&quot;name&quot;:&quot;Iron Man1905&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:428,&quot;name&quot;:&quot;Anderson Morrillo DEV # 54ce83f6-bbcb-4137-bffe-78aefa52fe40&quot;,&quot;alterego&quot;:&quot;Worst Automatizator ever&quot;,&quot;description&quot;:&quot;El Dev Humilde&quot;,&quot;powers&quot;:[&quot;JAVA&quot;,&quot;NET&quot;]},{&quot;id&quot;:429,&quot;name&quot;:&quot;IronFbb5a60f02-3e76-4d54-8277-5e0841ef8b8f&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:430,&quot;name&quot;:&quot;Iron Man66&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:432,&quot;name&quot;:&quot;Test Character 1750433899423&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:433,&quot;name&quot;:&quot;Test Character 1750433899666&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:434,&quot;name&quot;:&quot;Test Character 1750433900743&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:435,&quot;name&quot;:&quot;Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:437,&quot;name&quot;:&quot;Test Character 1750433903439&quot;,&quot;alterego&quot;:&quot;Test Alter Ego&quot;,&quot;description&quot;:&quot;Test Description&quot;,&quot;powers&quot;:[&quot;Test Power 1&quot;,&quot;Test Power 2&quot;]},{&quot;id&quot;:438,&quot;name&quot;:&quot;Jacqui&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:439,&quot;name&quot;:&quot;Iron Man1906&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:440,&quot;name&quot;:&quot;Anderson Morrillo DEV # 3969a194-06d5-49a9-9092-733f4e1c8281&quot;,&quot;alterego&quot;:&quot;Worst Automatizator ever&quot;,&quot;description&quot;:&quot;El Dev Humilde&quot;,&quot;powers&quot;:[&quot;JAVA&quot;,&quot;NET&quot;]},{&quot;id&quot;:441,&quot;name&quot;:&quot;Ghost Rider JC - #(myRandomString)&quot;,&quot;alterego&quot;:&quot;Ghost Rider JC&quot;,&quot;description&quot;:&quot;Demon&quot;,&quot;powers&quot;:[&quot;Fire&quot;,&quot;Punishing gaze&quot;]},{&quot;id&quot;:442,&quot;name&quot;:&quot;Jose Obando 1750433957284&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:443,&quot;name&quot;:&quot;Iron Man Rafael&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:444,&quot;name&quot;:&quot;Iron Marco&quot;,&quot;alterego&quot;:&quot;Marco Jativa&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:445,&quot;name&quot;:&quot;Silvana Bentacourt v1&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire test&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:446,&quot;name&quot;:&quot;Javier Simbana&quot;,&quot;alterego&quot;:&quot;All&quot;,&quot;description&quot;:&quot;Superpower&quot;,&quot;powers&quot;:[&quot;Teletransportacion&quot;,&quot;Jugar futbol&quot;]},{&quot;id&quot;:448,&quot;name&quot;:&quot;Iron Man a63bcaa0-8085-4566-b0cf-8f5e1b0c5c6c&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:449,&quot;name&quot;:&quot;Iron Man 7631688d&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:450,&quot;name&quot;:&quot;Iron Man eb0e8d97&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:451,&quot;name&quot;:&quot;Iron Man cb1b3f87&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:452,&quot;name&quot;:&quot;Iron Man 1df3c71a&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:453,&quot;name&quot;:&quot;Green Goblin&quot;,&quot;alterego&quot;:&quot;Ned&quot;,&quot;description&quot;:&quot;Student&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:454,&quot;name&quot;:&quot;Diana1750433951&quot;,&quot;alterego&quot;:&quot;kcatucuamba&quot;,&quot;description&quot;:&quot;A genius programmer and a superhero&quot;,&quot;powers&quot;:[&quot;PHP&quot;,&quot;JAVA&quot;]},{&quot;id&quot;:455,&quot;name&quot;:&quot;Iron Man Infernal Karate -41787326-1671-4354-95fb-5b06971d3883&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:458,&quot;name&quot;:&quot;Iron Man Test&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:459,&quot;name&quot;:&quot;Iron Man 4678f266-a460-48f1-ae8e-d927dad2bd16&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:460,&quot;name&quot;:&quot;Iron Man #(randomNum)&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:461,&quot;name&quot;:&quot;Alexis Test1&quot;,&quot;alterego&quot;:&quot;Alexis Test1&quot;,&quot;description&quot;:&quot;Alexis Test1&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:462,&quot;name&quot;:&quot;Eduardo Shigui&quot;,&quot;alterego&quot;:&quot;Edu&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:463,&quot;name&quot;:&quot;Iron Man1907&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:464,&quot;name&quot;:&quot;Spider-Man-fda525ee-03b4-4a9a-bac2-b5b69f49e7a3&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Friendly neighborhood Spider-Man&quot;,&quot;powers&quot;:[&quot;Wall-crawling&quot;,&quot;Spider-sense&quot;]},{&quot;id&quot;:465,&quot;name&quot;:&quot;spiderman.name&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:466,&quot;name&quot;:&quot;IronFb57bd5b58-ae3d-4373-acfa-2919bd800e0e&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:467,&quot;name&quot;:&quot;Iron Man b6d81&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:468,&quot;name&quot;:&quot;Javier Simbana 1&quot;,&quot;alterego&quot;:&quot;All jsi&quot;,&quot;description&quot;:&quot;Superpower&quot;,&quot;powers&quot;:[&quot;Teletransportacion&quot;,&quot;Jugar futbol&quot;]},{&quot;id&quot;:469,&quot;name&quot;:&quot;Iron Man4&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:470,&quot;name&quot;:&quot;Bob1750434058&quot;,&quot;alterego&quot;:&quot;kcatucuamba&quot;,&quot;description&quot;:&quot;A genius programmer and a superhero&quot;,&quot;powers&quot;:[&quot;PHP&quot;,&quot;JAVA&quot;]},{&quot;id&quot;:471,&quot;name&quot;:&quot;IronMan_072abe9d-e0a2-4650-88bf-273284a64666&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:472,&quot;name&quot;:&quot;Chris M1&quot;,&quot;alterego&quot;:&quot;Christian Muyon&quot;,&quot;description&quot;:&quot;Programmer and Karate enthusiast&quot;,&quot;powers&quot;:[&quot;Intelligence&quot;,&quot;String&quot;]},{&quot;id&quot;:473,&quot;name&quot;:&quot;Iron Man 4c592141-80e1-4206-9a8b-06c0bcc1b363&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:474,&quot;name&quot;:&quot;Green Goblin 2&quot;,&quot;alterego&quot;:&quot;Ned&quot;,&quot;description&quot;:&quot;Student&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:475,&quot;name&quot;:&quot;Iron Man1908&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:476,&quot;name&quot;:&quot;Iron Man 56&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:477,&quot;name&quot;:&quot;Blue Marvel&quot;,&quot;alterego&quot;:&quot;Adán Bernard Brashear&quot;,&quot;description&quot;:&quot;Cientifico&quot;,&quot;powers&quot;:[&quot;living reactor&quot;]},{&quot;id&quot;:478,&quot;name&quot;:&quot;Iron Man tst23&quot;,&quot;alterego&quot;:&quot;Tony Stark tst&quot;,&quot;description&quot;:&quot;Genius billionaire tst&quot;,&quot;powers&quot;:[&quot;Armor tst&quot;,&quot;Flight tst&quot;]},{&quot;id&quot;:479,&quot;name&quot;:&quot;Iron Man Infernal Karate -b4bb865d-a131-4ddd-b275-d6a0554308a5&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:481,&quot;name&quot;:&quot;Iron Mansanchez&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:482,&quot;name&quot;:&quot;DiegoCambiado3 Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark Diego&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:483,&quot;name&quot;:&quot;Character-ef2c4b87&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:484,&quot;name&quot;:&quot;Character-e9d66f0e&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:485,&quot;name&quot;:&quot;Character-ad7b4a88&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:486,&quot;name&quot;:&quot;Character-ac632283&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Updated description&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:487,&quot;name&quot;:&quot;IronFba388ed7d-d28b-4d08-b9c2-6834d477af00&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:488,&quot;name&quot;:&quot;Iron Man9&quot;,&quot;alterego&quot;:&quot;Otro&quot;,&quot;description&quot;:&quot;Otro&quot;,&quot;powers&quot;:[&quot;Armor&quot;]},{&quot;id&quot;:490,&quot;name&quot;:&quot;Iron Man 91e6d9ac&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:491,&quot;name&quot;:&quot;Iron Man 0f671a8a&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:492,&quot;name&quot;:&quot;Iron Man 35a2388e&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:493,&quot;name&quot;:&quot;Iron Man 32ebadfa&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:494,&quot;name&quot;:&quot;Anderson Morrillo DEV # aee869ff-edc7-4235-96a3-a3bd18fe402a&quot;,&quot;alterego&quot;:&quot;Worst Automatizator ever&quot;,&quot;description&quot;:&quot;El Dev Humilde&quot;,&quot;powers&quot;:[&quot;JAVA&quot;,&quot;NET&quot;]},{&quot;id&quot;:495,&quot;name&quot;:&quot;Anderson Morrillo DEV #&quot;,&quot;alterego&quot;:&quot;Worst Automatizator ever&quot;,&quot;description&quot;:&quot;El Dev Humilde&quot;,&quot;powers&quot;:[&quot;JAVA&quot;,&quot;NET&quot;]},{&quot;id&quot;:496,&quot;name&quot;:&quot;chleona&quot;,&quot;alterego&quot;:&quot;Leons&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:497,&quot;name&quot;:&quot;Iron Man 5a56b4d8&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:498,&quot;name&quot;:&quot;Iron Man 2f038a75&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:499,&quot;name&quot;:&quot;Iron Man 5454745d&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:500,&quot;name&quot;:&quot;Iron Man f614f678&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius, billionaire, playboy, philanthropist. Wears a suit of armor.&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:501,&quot;name&quot;:&quot;Iron Man 80&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:502,&quot;name&quot;:&quot;Charlie1750434173&quot;,&quot;alterego&quot;:&quot;kcatucuamba&quot;,&quot;description&quot;:&quot;A genius programmer and a superhero&quot;,&quot;powers&quot;:[&quot;PHP&quot;,&quot;JAVA&quot;]},{&quot;id&quot;:504,&quot;name&quot;:&quot;Super Mamá&quot;,&quot;alterego&quot;:&quot;Luz Toaquiza&quot;,&quot;description&quot;:&quot;Puede hacer varias cosas a la vez&quot;,&quot;powers&quot;:[&quot;Amor&quot;,&quot;Comprensión&quot;]},{&quot;id&quot;:505,&quot;name&quot;:&quot;DiegoCambiado3 Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark Diego&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:506,&quot;name&quot;:&quot;Captain America 1750434216603&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Super soldier with enhanced strength and agility&quot;,&quot;powers&quot;:[&quot;Super Strength&quot;,&quot;Enhanced Agility&quot;,&quot;Vibranium Shield&quot;]},{&quot;id&quot;:507,&quot;name&quot;:&quot;Hulk Supremo 1723463053 1750434217197&quot;,&quot;alterego&quot;:&quot;Bruce Banner&quot;,&quot;description&quot;:&quot;Scientist with the ability to transform into a giant green monster&quot;,&quot;powers&quot;:[&quot;Super Strength&quot;,&quot;Regeneration&quot;,&quot;Durability&quot;]},{&quot;id&quot;:508,&quot;name&quot;:&quot;Black Widow 1750434217635&quot;,&quot;alterego&quot;:&quot;Natasha Romanoff&quot;,&quot;description&quot;:&quot;Skilled spy and martial artist&quot;,&quot;powers&quot;:[&quot;Combat Expert&quot;,&quot;Espionage&quot;,&quot;Tactical Intelligence&quot;]},{&quot;id&quot;:509,&quot;name&quot;:&quot;Iron Man tst233&quot;,&quot;alterego&quot;:&quot;Tony Stark tst&quot;,&quot;description&quot;:&quot;Genius billionaire tst&quot;,&quot;powers&quot;:[&quot;Armor tst&quot;,&quot;Flight tst&quot;]},{&quot;id&quot;:510,&quot;name&quot;:&quot;Thor 1750434218264&quot;,&quot;alterego&quot;:&quot;Thor Odinson&quot;,&quot;description&quot;:&quot;God of Thunder from Asgard&quot;,&quot;powers&quot;:[&quot;Weather Control&quot;,&quot;Mjolnir&quot;,&quot;Superhuman Strength&quot;]},{&quot;id&quot;:511,&quot;name&quot;:&quot;Captain America 1750434218953&quot;,&quot;alterego&quot;:&quot;Steve Rogers&quot;,&quot;description&quot;:&quot;Super soldier with enhanced strength and agility&quot;,&quot;powers&quot;:[&quot;Super Strength&quot;,&quot;Enhanced Agility&quot;,&quot;Vibranium Shield&quot;]},{&quot;id&quot;:512,&quot;name&quot;:&quot;Spider-Man-02368906-8b2b-4e16-80b0-71dd5d2f5c4d&quot;,&quot;alterego&quot;:&quot;Peter Parker&quot;,&quot;description&quot;:&quot;Friendly neighborhood Spider-Man&quot;,&quot;powers&quot;:[&quot;Wall-crawling&quot;,&quot;Spider-sense&quot;]},{&quot;id&quot;:513,&quot;name&quot;:&quot;Iron Man 7fc9b5b3-d7c2-462b-a1ee-116cef0932da&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:514,&quot;name&quot;:&quot;Anderson Morrillo DEV # ef460b18-ae1c-4e5e-8757-f0eb0a32ede8&quot;,&quot;alterego&quot;:&quot;Worst Automatizator ever&quot;,&quot;description&quot;:&quot;El Dev Humilde&quot;,&quot;powers&quot;:[&quot;JAVA&quot;,&quot;NET&quot;]},{&quot;id&quot;:516,&quot;name&quot;:&quot;Chris Muyon xd&quot;,&quot;alterego&quot;:&quot;Christian Muyon&quot;,&quot;description&quot;:&quot;Programmer and Karate enthusiast&quot;,&quot;powers&quot;:[&quot;Intelligence&quot;,&quot;String&quot;]},{&quot;id&quot;:517,&quot;name&quot;:&quot;DiegoCambiado3 Iron Man&quot;,&quot;alterego&quot;:&quot;Tony Stark Diego&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:518,&quot;name&quot;:&quot;Iron Man1909&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:519,&quot;name&quot;:&quot;Iron Man58&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:520,&quot;name&quot;:&quot;Ironasdsadsa Man&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:521,&quot;name&quot;:&quot;Iron Man 9619&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:523,&quot;name&quot;:&quot;Iron Man 3378&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:524,&quot;name&quot;:&quot;Iron Man 5092&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:525,&quot;name&quot;:&quot;Iron Man 563&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:526,&quot;name&quot;:&quot;Iron Man 2753&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:527,&quot;name&quot;:&quot;Iron Man 202&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:529,&quot;name&quot;:&quot;Iron Man 9862&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:530,&quot;name&quot;:&quot;The Super Soldier&quot;,&quot;alterego&quot;:&quot;Stalin Condolo&quot;,&quot;description&quot;:&quot;Super Soldado&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:531,&quot;name&quot;:&quot;Iron ManSanchez2&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]},{&quot;id&quot;:532,&quot;name&quot;:&quot;Jose Obando 1750434296881&quot;,&quot;alterego&quot;:&quot;Tony Stark&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Armor&quot;,&quot;Flight&quot;]}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:27]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">marvel_characters_api</a><a class="badge badge-primary" href="karate-tags.html">id:2</a><a class="badge badge-primary" href="karate-tags.html">obtenerPersonajePorId</a><a class="badge badge-primary" href="karate-tags.html">iniciativa_marvel</a><a class="badge badge-primary" href="karate-tags.html">REQ_HU-12345A</a><a class="badge badge-primary" href="karate-tags.html">HU12345A</a><a class="badge badge-primary" href="karate-tags.html">marvel_character_crud</a><a class="badge badge-primary" href="karate-tags.html">Agente2</a><a class="badge badge-primary" href="karate-tags.html">E2</a><a class="badge badge-primary" href="karate-tags.html">solicitudExitosa200</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:27]</span>
+                <span class="scenario-name">T-API-HU-12345A-CA02-Obtener personaje por ID exitosamente 200 - karate</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>974</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:27]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">370</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://bp-se-test-cabcd9b246a5.herokuapp.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;/testuser/api/characters&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generarHeaders =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">function() {
+  return {
+    &quot;Content-Type&quot;: &quot;application/json&quot;
+  };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def headers = generarHeaders()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">52</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:27]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>headers headers</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &#39;16&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">507</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">10:45:03.742 request:
+1 &gt; GET http://bp-se-test-cabcd9b246a5.herokuapp.com/testuser/api/characters/16
+1 &gt; Content-Type: application/json
+1 &gt; Host: bp-se-test-cabcd9b246a5.herokuapp.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:45:04.064 response time in milliseconds: 315
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1750434304&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=09%2BXiJfuIjHJ5xxOmLNHyNzWs6YCfW%2FRGzCSpKChW38%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1750434304&amp;sid=1b10b0ff-8a76-4548-befa-353fc6c6c045&amp;s=09%2BXiJfuIjHJ5xxOmLNHyNzWs6YCfW%2FRGzCSpKChW38%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Fri, 20 Jun 2025 15:45:04 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;id&quot;:16,&quot;name&quot;:&quot;Batman&quot;,&quot;alterego&quot;:&quot;Bruce Wayne&quot;,&quot;description&quot;:&quot;Genius billionaire&quot;,&quot;powers&quot;:[&quot;Strong&quot;,&quot;Force&quot;]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
