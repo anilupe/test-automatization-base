@@ -42,22 +42,11 @@ src/
 
 ## Objetivo
 
-Crear escenarios `.feature` con enfoque senior: estandarizado, limpio, escalable y mantenible.
+Crear escenarios `.feature` con enfoque: estandarizado, limpio, escalable y mantenible.
 
 ### Fuentes de entrada y estrategias de generación
 
 - **Si la entrada es una colección Postman:** Se usarán sus requests y ejemplos de respuesta para generar los JSON necesarios en `src/test/resources/data` y construir los escenarios para cada caso de uso.
-
-- **Si la entrada es un comando cURL:** Se generarán automáticamente al menos 3 escenarios base:
-  - 200 (respuesta exitosa)
-  - 400 (datos inválidos)
-  - 500 (error interno del sistema)
-
-- **Si la entrada es un contrato OpenAPI (.yaml o .yml):** Se recorrerán los endpoints definidos para:
-  - Generar automáticamente los escenarios por cada operationId
-  - Crear los JSON de ejemplo desde requestBody y responses
-  - Incluir validaciones de código de estado y estructura esperada del JSON
-
 ---
 
 ## 1. Convenciones y nombres
@@ -65,7 +54,7 @@ Crear escenarios `.feature` con enfoque senior: estandarizado, limpio, escalable
 | Elemento            | Convención                      | Ejemplo                                 |
 |---------------------|----------------------------------|-----------------------------------------|
 | Archivo `.feature`  | nombreCamelCase.feature         | crearCuentaNuevaApi.feature           |
-| Carpeta de features | nombre del proyecto o servicio  | src/test/java/com/pichincha/features/tre_msa_savings_account |
+| Carpeta de features | nombre del proyecto o servicio  | src/test/java/com/pereira/features/tre_msa_savings_account |
 | Carpeta de JSON     | nombre del servicio             | src/test/resources/data/tre_msa_savings_account |
 | Archivos JSON       | snake_case_descriptivo          | request_creation_account.json           |
 | Tags principales    | @REQ_ID @HU_ID @descripcion @micro @default   | @REQ_BTPMCDP-118 @HU118 @account_creation @tre_msa_savings_account @Agente2 @E2 @iniciativa_cuentas |
@@ -156,7 +145,7 @@ Feature: [HISTORIA-ID] Nombre de la funcionalidad (microservicio para...)
 - Centraliza y reutiliza datos de prueba en `src/test/resources/data/...`.
 - No hardcodees valores repetitivos (usar `karate-config.js` o archivos JSON).
 - Usa `Scenario Outline` cuando haya múltiples combinaciones de datos.
-- Agrupa features por proyecto en `src/test/java/com/pichincha/features`.
+- Agrupa features por proyecto en `src/test/java/com/pereira/features`.
 - **Cada feature debe tener los tags obligatorios**: `@REQ_[HISTORIA-ID] @funcionalidad @nombre_microservicio @Agente2 @E2`
 - **Los escenarios deben tener el formato**: `T-API-[HISTORIA-ID]-CAXX-Descripción acción resultado código - karate`
 - **Cada feature debe incluir por defecto al menos estos escenarios**:
@@ -282,7 +271,7 @@ Feature: BTPMCDP-118 Crear cuenta exitosamente (microservicio transversal para c
   @id:1 @crearCuentaKyc @solicitudExitosa200
   Scenario: T-API-BTPMCDP-118-CA01-Crear cuenta exitosamente 201 - karate
     * def jsonData = read('classpath:data/tre_msa_savings_account/request_creation_account.json')
-    * def result = call read('classpath:com/pichincha/features/utility/generar_compliance_id.feature@generar_compliance_id')
+    * def result = call read('classpath:com/pereira/features/utility/generar_compliance_id.feature@generar_compliance_id')
     * set jsonData.savingsAccountFacility.customerReference.complianceId = result.response.regulatoryComplianceId    
     And request jsonData
     When method POST
@@ -384,14 +373,6 @@ Para garantizar la consistencia en todos los proyectos, es fundamental seguir es
 
 - **Ubicación de Karate config**: `src/test/java/karate-config.js`
 - **Ubicación de funciones de utilidad**: `src/main/java/com/pereira/utils/`
-
-> **IMPORTANTE**: 
-> - Nunca crear carpetas en ubicaciones diferentes a las especificadas.
-> - La estructura de carpetas debe ser idéntica en todos los proyectos.
-> - Cada microservicio debe tener su propia carpeta dentro de features y data.
-> - En caso de encontrar un proyecto con una estructura diferente, debe ser actualizado para cumplir con este estándar.
-> - Al comenzar un nuevo proyecto, verificar que todos los microservicios a utilizar estén definidos en `karate-config.js`. Si alguno no está definido, añadirlo siguiendo el formato estándar.
-
 ---
 
 ## 9. Lista de verificación para nuevos proyectos
@@ -413,7 +394,7 @@ Antes de comenzar a trabajar en un nuevo proyecto, verifica los siguientes punto
    - Crear las carpetas necesarias para los microservicios que se van a utilizar
 
 4. **Verificación de features**:
-   - Confirmar que existe la estructura para features en `src/test/java/com/pichincha/features/`
+   - Confirmar que existe la estructura para features en `src/test/java/com/pereira/features/`
    - Crear las carpetas necesarias para los microservicios que se van a utilizar
 
 5. **Recordatorio de convenciones de nombres**:
@@ -422,12 +403,3 @@ Antes de comenzar a trabajar en un nuevo proyecto, verifica los siguientes punto
    - Archivos feature: `nombreCamelCase.feature` (camelCase)
    - Archivos JSON: `nombre_descriptivo.json` (snake_case)
 
-Al seguir esta lista de verificación, garantizarás que el proyecto sigue los estándares establecidos y que no faltarán las variables de entorno necesarias para los microservicios.
-
----
-
-## Créditos
-
-Guía estandarizada por el equipo QA/Dev de [Tu Empresa].  
-Responsable técnico: Ana pereira  
-Contacto para dudas: [Tu correo o canal interno]
