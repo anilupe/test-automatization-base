@@ -27,3 +27,11 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task createKarateReportsDir {
+    doLast {
+        file('build/karate-reports').mkdirs()
+    }
+}
+
+test.dependsOn createKarateReportsDir
